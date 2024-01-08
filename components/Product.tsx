@@ -13,13 +13,13 @@ export default function Product() {
             </h2>
           </div>
 
-          <div className="flex flex-col gap-16 p-5 w-full items-center">
+          <div className="flex flex-col gap-16 p-5 w-full items-center justify-center">
             {houseData.map(function (res) {
               return (
                 <Link href={`/details/${res.id}`}>
                   <div
                     key={res.id}
-                    className="w-full bg-white flex flex-col gap-5 text-center md:flex-row rounded-2xl md:grid md:grid-cols-2 lg:w-[768px]"
+                    className="w-full bg-white flex flex-col gap-5 text-center md:flex-row rounded-2xl md:grid md:grid-cols-2 lg:w-[768px] sm:w-[468px] md:w-[550px] transition-all duration-500"
                     style={{
                       // borderRadius: "1.5rem",
                       boxShadow:
@@ -29,7 +29,7 @@ export default function Product() {
                     <img
                       src={res.image}
                       alt=""
-                      className="w-full h-60 object-cover object-center md:h-full rounded-bl-xl rounded-tl-xl"
+                      className="w-full rounded-t-2xl h-60 object-cover object-center md:h-full md:rounded-bl-xl md:rounded-tl-xl"
                       // style={{
                       //   borderRadius: "1.5rem 1.5rem 0 0",
                       // }}
