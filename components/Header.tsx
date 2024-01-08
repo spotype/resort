@@ -9,7 +9,7 @@ export default function Header() {
     <motion.div
       initial="hidden"
       animate="visible"
-      className={`h-16 flex bg-white shadow-xl items-center fixed top-0 left-0 w-full`}
+      className={`h-16 flex bg-white shadow-xl items-center fixed top-0 left-0 w-full z-50`}
     >
       <div className={`mx-auto flex w-11/12`}>
         <div className="flex justify-between w-full items-center">
