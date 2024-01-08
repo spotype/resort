@@ -49,7 +49,7 @@ export default function documents() {
             <Buttons />
           </div>
 
-          <div>
+          <div className="my-10">
             <Maps />
           </div>
         </div>
