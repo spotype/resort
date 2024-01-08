@@ -1,15 +1,15 @@
 export default function Booknow() {
   return (
     <div className="bg-[#f7f7f7] py-16">
-      <div className="flex mx-auto w-11/12">
-        <div className="w-full">
+      <div className="flex mx-auto w-11/12 justify-center">
+        <div className="w-full flex flex-col items-center">
           <div className="w-full mb-10">
             <h2 className="font-bold text-2xl text-center text-red-600">
               Book now
             </h2>
           </div>
 
-          <div>
+          <div className="text-center">
             <p>Deposit $500 to "Shore Rentals"</p>
             <p>PO Box 202 Ridgewood, NJ 07451</p>
 

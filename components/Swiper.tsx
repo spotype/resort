@@ -16,7 +16,7 @@ export default function App() {
   const reviews = review();
   return (
     <div className="py-16 bg-gray-100">
-      <div className="mx-auto flex w-11/12">
+      <div className="mx-auto flex w-11/12 lg:w-[768px]">
         <Swiper
           cssMode={true}
           navigation={true}

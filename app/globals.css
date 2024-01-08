@@ -23,7 +23,8 @@
   opacity: 0;
 }
 
-.item11 {
-  grid-column: 1 / -1;
-  /* padding: 0 10px; */
+@media (max-width: 640px) {
+  .item11 {
+    grid-column: 1 / -1;
+  }
 }

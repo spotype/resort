@@ -1,10 +1,15 @@
 export default function Cover() {
   return (
-    <div>
-      <div className="mx-auto flex h-screen w-11/12 items-center justify-center ">
-        <div className="">
+    <div className="bg-[url('/cover.jpg')] bg-center bg-cover w-full h-screen">
+      <div
+        className=""
+        style={{
+          backdropFilter: "blur(4px)",
+        }}
+      >
+        <div className="mx-auto flex h-screen w-11/12 items-center justify-center">
           <div className=" text-center gap-7 flex flex-col">
-            <span className="text-red-600 text-4xl font-bold">
+            <span className="text-red-600 text-white text-4xl font-bold">
               4 Beach Rentals for the summer (Long and short term)
             </span>
 
