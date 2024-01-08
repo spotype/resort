@@ -1,4 +1,5 @@
-import Buttons from "@/utils/Buttons";
+import Buttons from "./Buttons";
+import Maps from "./Maps";
 
 export default function documents() {
   return (
@@ -46,6 +47,10 @@ export default function documents() {
 
           <div className="flex flex-col gap-3 justify-center">
             <Buttons />
+          </div>
+
+          <div>
+            <Maps />
           </div>
         </div>
       </div>
