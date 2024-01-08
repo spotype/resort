@@ -22,3 +22,8 @@
 .swiper-button-prev.swiper-button-disabled {
   opacity: 0;
 }
+
+.item11 {
+  grid-column: 1 / -1;
+  /* padding: 0 10px; */
+}

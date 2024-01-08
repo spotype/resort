@@ -15,7 +15,9 @@ export default function Features() {
               <div className="grid grid-cols-2 gap-10 items-start justify-center">
                 {feature.map(function (res) {
                   return (
-                    <div className="flex flex-col gap-3 items-center">
+                    <div
+                      className={`${res.classNames} flex flex-col gap-3 items-center`}
+                    >
                       <div>
                         <img src={res.url} className="w-10" alt="" />
                       </div>
