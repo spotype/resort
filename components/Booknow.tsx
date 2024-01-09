@@ -1,15 +1,14 @@
 export default function Booknow() {
   return (
     <div className="bg-[#f7f7f7] py-16">
-      <div className="flex mx-auto w-11/12 justify-center xl:w-[1200px]">
-        <div className="w-full flex flex-col items-center">
-          <div className="w-full mb-10">
-            <h2 className="font-bold text-2xl text-center text-red-600">
-              Book now
-            </h2>
-          </div>
-
-          <div className="text-center">
+      <div className="flex mx-auto w-11/12 justify-center xl:w-[1200px] flex-col">
+        <div className="w-full mb-10">
+          <h2 className="font-bold text-2xl text-center text-red-600">
+            Book now
+          </h2>
+        </div>
+        <div className="w-full flex flex-col items-center md:grid md:grid-cols-3 md:text-start">
+          <div className="text-center md:text-start">
             <p>Deposit $500 to "Shore Rentals"</p>
             <p>PO Box 202 Ridgewood, NJ 07451</p>
 
@@ -22,11 +21,11 @@ export default function Booknow() {
             <span className="">OR</span>
           </div>
 
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center md:items-start">
             <div className="mb-10">
               <h2 className="font-bold text-xl">Contact us:</h2>
             </div>
-            <div className="flex flex-col items-center font-bold text-lg gap-3">
+            <div className="flex flex-col items-center font-bold text-lg gap-3 md:text-start md:items-start">
               <div className="flex gap-2">
                 <img src="/call.svg" className="w-5" alt="" />
                 <span>(732) 278-4355</span>
