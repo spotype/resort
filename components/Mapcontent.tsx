@@ -3,7 +3,7 @@ export default function Mapcontent() {
     <div>
       <div>
         <div>
-          <div className="font-bold my-10">
+          <div className="font-bold my-10 md:flex md:w-full md:justify-center">
             <p>4 Great Rental Units Website</p>
             <p>WWW.atthebeach4you.com</p>
           </div>

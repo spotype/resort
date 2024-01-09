@@ -1,10 +1,3 @@
-import Mapcontent from "./Mapcontent";
-
 export default function Maps() {
-  return (
-    <div>
-      Maps
-      <Mapcontent />
-    </div>
-  );
+  return <div className="bg-black w-full h-[500px] text-white">ff</div>;
 }

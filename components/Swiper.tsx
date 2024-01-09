@@ -47,7 +47,7 @@ export default function App() {
                       alt=""
                     />
                   </div>
-                  <span className="flex">
+                  <span className="flex gap-2">
                     <img src="/star.svg" className="w-5" alt="" />
                     <img src="/star.svg" className="w-5" alt="" />
                     <img src="/star.svg" className="w-5" alt="" />

@@ -1,7 +1,7 @@
 export default function Booknow() {
   return (
     <div className="bg-[#f7f7f7] py-16">
-      <div className="flex mx-auto w-11/12 justify-center">
+      <div className="flex mx-auto w-11/12 justify-center xl:w-[1200px]">
         <div className="w-full flex flex-col items-center">
           <div className="w-full mb-10">
             <h2 className="font-bold text-2xl text-center text-red-600">

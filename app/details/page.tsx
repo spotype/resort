@@ -1,32 +1,83 @@
-import review from "@/utils/review";
+import house from "@/utils/house";
+import Link from "next/link";
 
 export default function page() {
-  const data = review();
+  const data = house();
   return (
     <div>
       <div>
         <div className="flex flex-col gap-24 items-center">
           {data.map((res) => {
             return (
-              <div className="w-[400px] bg-white shadow-xl flex flex-col items-center pt-16 pb-5 gap-5 px-2 rounded-xl relative border-2">
-                <div className=" absolute -top-20">
-                  <img
-                    src="/photo.webp"
-                    className="w-36 rounded-full h-36 object-cover object-top border-2 shadow-xl z-40"
-                    alt=""
-                  />
-                </div>
-                <span className="flex">
-                  <img src="/star.svg" className="w-5" alt="" />
-                  <img src="/star.svg" className="w-5" alt="" />
-                  <img src="/star.svg" className="w-5" alt="" />
-                  <img src="/star.svg" className="w-5" alt="" />
-                  <img src="/star.svg" className="w-5" alt="" />
-                </span>
-                <span className="text-2xl">{res.othor}</span>
+              <div className="bg-white shadow-lg rounded-xl">
+                <div>
+                  <img src={res.image} alt="" className=" rounded-t-xl" />
+                  <div className="p-5">
+                    <div className="py-4">
+                      <span className=" font-bold text-2xl">{res.title}</span>
 
-                <div className="w-full bg-blue-400 mx-3 text-justify p-4 rounded-xl">
-                  <span className=" text-sm">{res.title}</span>
+                      <div className="flex flex-col gap-5 mt-3">
+                        <div className="flex gap-2">
+                          <img src="/location.svg" className="w-5" alt="" />
+                          <span>Farragut Ave Seaside Park, NJ</span>
+                        </div>
+
+                        <div className="flex w-full justify-between items-center">
+                          <div className="flex flex-col items-center">
+                            <img src="/apartment.svg" className="w-8" alt="" />
+                            <span>House</span>
+                          </div>
+
+                          <div className="w-[2px] h-10 bg-slate-400"></div>
+
+                          <div className="flex flex-col items-center">
+                            <img src="/user.svg" className="w-8" alt="" />
+                            <span>House</span>
+                          </div>
+
+                          <div className="w-[2px] h-10 bg-slate-400"></div>
+
+                          <div className="flex flex-col items-center">
+                            <img src="/bed.svg" className="w-8" alt="" />
+                            <span>House</span>
+                          </div>
+
+                          <div className="w-[2px] h-10 bg-slate-400"></div>
+
+                          <div className="flex flex-col items-center">
+                            <img src="/birthroom.svg" className="w-8" alt="" />
+                            <span>House</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mt-4">
+                        <div>
+                          <span className="font-bold text-lg">From</span>
+
+                          <div className="mt-2 flex items-center justify-between">
+                            <div className="flex flex-col gap-2">
+                              <span className="font-bold text-xl text-blue-900">
+                                {res.price}
+                              </span>
+                              <span className="font-semibold">
+                                Additional charges may apply
+                              </span>
+                            </div>
+
+                            <div>
+                              <Link
+                                href={""}
+                                className="py-4 px-6 bg-blue-600 font-bold text-white rounded-lg"
+                              >
+                                View deal
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             );

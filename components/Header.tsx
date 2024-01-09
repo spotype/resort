@@ -19,17 +19,19 @@ export default function Header() {
           <motion.button
             variants={slideInFromRight(0.2)}
             onClick={() => setDrop(!drop)}
-            className=" border-2 px-2 rounded-lg"
+            className=" border-2 px-2 rounded-lg md:hidden"
           >
             <img src="/menu.svg" className="w-10 flex" alt="" />
           </motion.button>
           <div
             className={
-              drop ? "absolute top-16 left-0 bg-white w-full" : "hidden"
+              drop
+                ? "absolute top-16 left-0 bg-white w-full"
+                : "hidden md:block"
             }
           >
-            <ul className="flex flex-col items-center justify-center gap-10 font-bold text-xl">
-              <li className="mt-10">
+            <ul className="flex flex-col md:flex-row mx-0 items-center justify-center gap-10 font-bold text-xl">
+              <li className="mt-10 md:m-0">
                 <Link href={""}>Home</Link>
               </li>
               <li>
