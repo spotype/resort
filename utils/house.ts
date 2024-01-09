@@ -1,14 +1,6 @@
 export default function house() {
   const houseData = [
     {
-      id: 0,
-      title: "Beach house",
-      status: "4 bedroom sleeps 10 8 person jacuzzi",
-      locations: "23 Farragut Ave Seaside Park, NJ",
-      price: "$3,000 / week",
-      image: "/beachhouse.jpg",
-    },
-    {
       id: 1,
       title: "Unit 1",
       status: "3 bedroom sleeps 8",

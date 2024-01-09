@@ -35,6 +35,51 @@ export default function review() {
       url: "/star.svg",
       othor: "Blake B.",
     },
+    {
+      title: `“Very responsive and friendly! The back 2-bedroom residence was perfect
+      for 2-4 people and fully functional full kitchen! The location was ideal and just a ½
+      block from the beach, which was very convenient given the boardwalk bathrooms
+      were closed, so we could instead access the house in a short walk. Clean,
+      comfortable and CONVENIENT! A great week getaway”`,
+      url: "/star.svg",
+      othor: "Blake B.",
+    },
+    {
+      title: `“Very responsive and friendly! The back 2-bedroom residence was perfect
+      for 2-4 people and fully functional full kitchen! The location was ideal and just a ½
+      block from the beach, which was very convenient given the boardwalk bathrooms
+      were closed, so we could instead access the house in a short walk. Clean,
+      comfortable and CONVENIENT! A great week getaway”`,
+      url: "/star.svg",
+      othor: "Blake B.",
+    },
+    {
+      title: `“Very responsive and friendly! The back 2-bedroom residence was perfect
+      for 2-4 people and fully functional full kitchen! The location was ideal and just a ½
+      block from the beach, which was very convenient given the boardwalk bathrooms
+      were closed, so we could instead access the house in a short walk. Clean,
+      comfortable and CONVENIENT! A great week getaway”`,
+      url: "/star.svg",
+      othor: "Blake B.",
+    },
+    {
+      title: `“Very responsive and friendly! The back 2-bedroom residence was perfect
+      for 2-4 people and fully functional full kitchen! The location was ideal and just a ½
+      block from the beach, which was very convenient given the boardwalk bathrooms
+      were closed, so we could instead access the house in a short walk. Clean,
+      comfortable and CONVENIENT! A great week getaway”`,
+      url: "/star.svg",
+      othor: "Blake B.",
+    },
+    {
+      title: `“Very responsive and friendly! The back 2-bedroom residence was perfect
+      for 2-4 people and fully functional full kitchen! The location was ideal and just a ½
+      block from the beach, which was very convenient given the boardwalk bathrooms
+      were closed, so we could instead access the house in a short walk. Clean,
+      comfortable and CONVENIENT! A great week getaway”`,
+      url: "/star.svg",
+      othor: "Blake B.",
+    },
   ];
 
   return review;
