@@ -1,10 +1,24 @@
+"use client";
 import house from "@/utils/house";
+import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
-
+import { useRef } from "react";
 export default function Product() {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "0.5 1"],
+  });
   const houseData = house();
   return (
-    <div className="py-16">
+    <motion.div
+      ref={ref}
+      style={{
+        scale: scrollYProgress,
+        opacity: scrollYProgress,
+      }}
+      className="py-16 transition-all duration-500 ease-in-out"
+    >
       <div className="flex mx-auto w-11/12 lg:w-[1000px] md:w-[768px]  items-center justify-center xl:w-[1200px]">
         <div className=" w-full">
           <div className="mb-10">
@@ -110,7 +124,7 @@ export default function Product() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -13,7 +13,7 @@ export default function Cover() {
         loop
         autoPlay
         muted
-        className="absolute h-screen w-full object-cover opacity-50"
+        className="absolute h-screen w-full object-cover opacity-60"
       ></video>
       <div
         className=""

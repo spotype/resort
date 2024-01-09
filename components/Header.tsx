@@ -1,15 +1,33 @@
 "use client";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 export default function Header() {
   const [drop, setDrop] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
   return (
     <motion.div
-      initial="hidden"
-      animate="visible"
-      className={`h-16 flex bg-white items-center fixed top-0 left-0 w-full z-50 border-b-2`}
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{
+        duration: 0.35,
+        ease: "easeInOut",
+      }}
+      className="h-20 flex bg-white items-center fixed top-0 left-0 w-full z-50 border-b-2"
       style={{
         backdropFilter: "blur(10px)",
       }}
