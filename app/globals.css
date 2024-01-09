@@ -35,3 +35,17 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.text-shadows {
+  filter: drop-shadow(2px 2px 7px #f7bfbf);
+}
+
+.bgs {
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}

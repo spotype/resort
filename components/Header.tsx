@@ -9,7 +9,10 @@ export default function Header() {
     <motion.div
       initial="hidden"
       animate="visible"
-      className={`h-16 flex bg-white shadow-xl items-center fixed top-0 left-0 w-full z-50`}
+      className={`h-16 flex bg-white items-center fixed top-0 left-0 w-full z-50 border-b-2`}
+      style={{
+        backdropFilter: "blur(10px)",
+      }}
     >
       <div className={`mx-auto flex w-11/12`}>
         <div className="flex justify-between w-full items-center">
@@ -30,7 +33,9 @@ export default function Header() {
                 : "hidden md:block"
             }
           >
-            <ul className="flex flex-col md:flex-row mx-0 items-center justify-center gap-10 font-bold text-xl">
+            <ul
+              className={` flex flex-col md:flex-row mx-0 items-center justify-center gap-10 font-bold text-xl`}
+            >
               <li className="mt-10 md:m-0">
                 <Link href={""}>Home</Link>
               </li>
