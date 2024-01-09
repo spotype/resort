@@ -10,7 +10,7 @@ export default function App() {
   const reviews = review();
   return (
     <div className="py-16 bg-gray-100">
-      <div className="mx-auto flex w-11/12 lg:w-[1024px]">
+      <div className="mx-auto flex w-11/12  xl:w-[1200px]">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -22,6 +22,10 @@ export default function App() {
               slidesPerView: 2,
               spaceBetween: 20,
             },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
           }}
           modules={[Autoplay, Navigation]}
           className="mySwiper"
@@ -29,7 +33,7 @@ export default function App() {
           {reviews.map(function (res) {
             return (
               <SwiperSlide
-                className="flex flex-col items-center w-full px-2 text-center justify-center bg-white  border-2 py-2 rounded-2xl"
+                className="flex flex-col items-center w-full px-2 text-center justify-center bg-white  border-2 py-2 rounded-2xl lg:w-[304.5px]"
                 style={{
                   boxShadow:
                     "rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px",
