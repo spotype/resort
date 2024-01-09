@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Booknow() {
   return (
     <div className="bg-[#f7f7f7] py-16">
@@ -27,11 +28,11 @@ export default function Booknow() {
             </div>
             <div className="flex flex-col items-center font-bold text-lg gap-3 md:text-start md:items-start">
               <div className="flex gap-2">
-                <img src="/call.svg" className="w-5" alt="" />
+                <Image src="/call.svg" className="w-5" alt="" />
                 <span>(732) 278-4355</span>
               </div>
               <div className="flex gap-2">
-                <img src="/msg.svg" className="w-5" alt="" />
+                <Image src="/msg.svg" className="w-5" alt="" />
                 <span>seasideheights16@gmail.com</span>
               </div>
             </div>
